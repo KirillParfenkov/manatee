@@ -1,4 +1,5 @@
 manatee.iml
 target
 .idea
+*.iml
 src/main/resources/META-INF/MANIFEST.MF
