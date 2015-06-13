@@ -12,6 +12,15 @@
     <artifactId>manatee-webapp</artifactId>
     <packaging>bundle</packaging>
 
+    <dependencies>
+        <dependency>
+            <groupId>parf.by</groupId>
+            <artifactId>manatee-core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>
@@ -20,13 +29,14 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Export-Package>by.parf.test</Export-Package>
+                        <Export-Package>by.parf.manatee.webapp.service.*</Export-Package>
                         <Private-Package></Private-Package>
                         <Import-Package>
+                            org.osgi.service.http.*,
                             org.osgi.framework,
                             org.apache.felix.ipojo.*,
-                            org.apache.felix.ipojo,
-                            org.apache.felix.ipojo.architecture
+                            by.parf.manatee.core.application.*,
+                            by.parf.manatee.core.subject.*
                         </Import-Package>
                         <Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Version>1.1.2</Bundle-Version>
