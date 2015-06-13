@@ -1,6 +1,6 @@
-package by.parf.core.subject.bean;
+package by.parf.manatee.core.subject.bean;
 
-import by.parf.core.subject.Type;
+import by.parf.manatee.core.subject.Type;
 
 import java.util.Map;
 

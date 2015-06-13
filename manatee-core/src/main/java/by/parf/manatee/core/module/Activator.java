@@ -1,7 +1,5 @@
-package by.parf.core.modul;
+package by.parf.manatee.core.module;
 
-import by.parf.test.MyService;
-import org.apache.felix.ipojo.annotations.Requires;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 
@@ -10,12 +8,8 @@ import org.osgi.framework.BundleContext;
  */
 public class Activator implements BundleActivator {
 
-    @Requires
-    public MyService service;
-
-
     public void start(BundleContext bundleContext) throws Exception {
-        System.out.println(service.getDataToDisplay());
+       // System.out.println(service.getDataToDisplay());
     }
 
     public void stop(BundleContext bundleContext) throws Exception {

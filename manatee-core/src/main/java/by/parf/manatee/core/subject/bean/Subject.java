@@ -1,4 +1,4 @@
-package by.parf.core.subject.bean;
+package by.parf.manatee.core.subject.bean;
 
 /**
  * Created by parf on 13.6.15.
