@@ -11,12 +11,32 @@
     <packaging>bundle</packaging>
 
     <artifactId>manatee-core</artifactId>
+    <properties>
+        <jackson-version>2.5.4</jackson-version>
+    </properties>
 
     <dependencies>
         <dependency>
             <groupId>parf.by</groupId>
             <artifactId>manatee-webapp</artifactId>
             <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!-- Jackson -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>${jackson-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>${jackson-version}</version>
         </dependency>
     </dependencies>
 
@@ -37,7 +57,7 @@
                             by.parf.test
                         </Import-Package>
                         <Export-Package>by.parf.core</Export-Package>
-                        <Bundle-Activator>by.parf.core.Activator</Bundle-Activator>
+                        <Bundle-Activator>by.parf.core.modul.Activator</Bundle-Activator>
                     </instructions>
                 </configuration>
             </plugin>

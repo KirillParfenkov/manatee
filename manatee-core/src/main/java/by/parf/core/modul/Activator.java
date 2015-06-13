@@ -1,4 +1,4 @@
-package by.parf.core;
+package by.parf.core.modul;
 
 import by.parf.test.MyService;
 import org.apache.felix.ipojo.annotations.Requires;
