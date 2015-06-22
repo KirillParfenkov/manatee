@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en" ng-app="manateeCore">
+<head>
+  <meta charset="utf-8">
+  <title>Manatee</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+
+  <script src="../bower_components/jquery/dist/jquery.js"></script>
+  <script src="../bower_components/angular/angular.js"></script>
+  <script src="../bower_components/angular-animate/angular-animate.js"></script>
+  <script src="../bower_components/angular-route/angular-route.js"></script>
+  <script src="../bower_components/angular-resource/angular-resource.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/services.js"></script>
+</head>
+<body>
+  <div class="main-content">
+    <nav class="app-menu">
+      <div class="icon-panel">
+        <div class="icon first"><a href="#/manatee-schema">Schema</a></div>
+        <div class="icon">REST</div>
+        <div class="icon last">Resources</div>
+      </div>
+    </nav>
+    <div class="app-content">
+      <div ng-view class="view-frame"></div>
+    </div>
+  </div>
+</body>
+</html>

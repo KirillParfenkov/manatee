@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>manatee-schema-web</artifactId>
+    <packaging>bundle</packaging>
 
     <build>
         <plugins>
@@ -19,7 +20,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Export-Package></Export-Package>
+                        <Export-Package>by.parf.manatee.schema.web.service.*</Export-Package>
                         <Private-Package></Private-Package>
                         <Import-Package>
                             org.osgi.service.http.*,
