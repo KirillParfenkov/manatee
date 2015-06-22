@@ -3,3 +3,6 @@ target
 .idea
 *.iml
 src/main/resources/META-INF/MANIFEST.MF
+
+manatee-template/style/.sass-cache
+manatee-template/style/style.css.map

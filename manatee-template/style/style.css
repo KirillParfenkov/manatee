@@ -1,0 +1,63 @@
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+body {
+  color: #000;
+  font-family: "Roboto Slab"; }
+
+.shadow, .main-content .app-menu .icon-panel .icon, .main-content .app-content .menu .item, .main-content .app-content .form, .main-content .app-content .actions .item {
+  box-shadow: 0px 0px 2px 0px black; }
+
+.main-content {
+  width: 960px;
+  margin: auto auto; }
+  .main-content .app-menu {
+    margin: 40px 0px; }
+    .main-content .app-menu .icon-panel {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      .main-content .app-menu .icon-panel .icon {
+        min-height: 42px;
+        min-width: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+        padding: 28px 10px 10px;
+        background-color: #EFEFEF;
+        font-weight: bold; }
+      .main-content .app-menu .icon-panel .icon.first {
+        margin-left: 0px; }
+      .main-content .app-menu .icon-panel .icon.last {
+        margin-right: 0px; }
+  .main-content .app-content .menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap; }
+    .main-content .app-content .menu .item {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #EFEFEF; }
+    .main-content .app-content .menu .item.first {
+      margin-top: 0px; }
+  .main-content .app-content .form {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #EFEFEF; }
+    .main-content .app-content .form label {
+      margin-right: 20px; }
+  .main-content .app-content .actions {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; }
+    .main-content .app-content .actions .item {
+      padding: 15px;
+      background-color: #EFEFEF;
+      margin-right: 20px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,100 @@
+@import 'reset';
+
+$primary-color: #000;
+$base-background: #EFEFEF;
+$base-font: 'Roboto Slab';
+
+
+body {
+	color: $primary-color;
+	font-family: $base-font;
+}
+
+.shadow {
+	box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 1);	
+}
+
+.main-content {
+
+	width: 960px;
+	margin: auto auto;
+
+	.app-menu {
+
+		margin: 40px 0px;
+
+		.icon-panel {
+
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+
+			.icon {
+				@extend .shadow;
+				min-height: 42px;
+				min-width: 80px;
+				margin-left: 20px;
+				margin-right: 20px;
+				text-align: center;
+				padding: 28px 10px 10px;
+				background-color: $base-background;
+				font-weight: bold;
+			}
+
+			.icon.first {
+				margin-left: 0px;
+			}
+			.icon.last {
+				margin-right: 0px;
+			}
+		}
+	}
+
+	.app-content {
+		.menu {
+
+			display: flex;
+			flex-direction: column;
+			flex-wrap: no-wrap;
+
+			.item {
+				@extend .shadow;
+				margin-top: 20px;
+				padding: 15px;
+				background-color: $base-background;
+			}
+
+			.item.first {
+				margin-top: 0px;
+			}
+
+		}
+
+		// Add Schema
+
+		.form {
+			@extend .shadow;
+			margin-top: 20px;
+			padding: 15px;
+			background-color: $base-background;
+
+			label {
+				margin-right: 20px;
+			}
+		}
+
+		.actions {
+			margin-top: 20px;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+
+			.item {
+				@extend .shadow;
+				padding: 15px;
+				background-color: $base-background;
+				margin-right: 20px;
+			}
+		}
+	}
+}
