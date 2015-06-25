@@ -1,5 +1,3 @@
-<nav class="menu">
-    <div class="item first"><a href="#/manatee-schema/add-schema">Add Schema</a></div>
-    <div class="item">List Of Objects</div>
-    <div class="item">Graphical Layout</div>
+<nav class="menu" ng-controller="ManateeSchema.MenuCtrl">
+    <div class="item" ng-repeat="item in schemaMenu"><a href="{{item.href}}">{{item.label}}</a></div>
 </nav>
